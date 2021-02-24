@@ -1,0 +1,43 @@
+/* RESETS */
+
+html, *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* BOARD */
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{font-size: 1.5rem;}
+
+table{
+    margin-top: 10vh;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+td{
+    width: 50px;
+    height: 50px;
+}
+
+.a td:nth-child(even),.c td:nth-child(even),.e td:nth-child(even),.g td:nth-child(even) {
+    background-color: black;
+}
+
+.b td:nth-child(odd),.d td:nth-child(odd),.f td:nth-child(odd),.h td:nth-child(odd) {
+    background-color: black;
+}
