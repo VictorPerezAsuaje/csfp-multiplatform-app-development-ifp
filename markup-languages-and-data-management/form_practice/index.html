@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Formulario</title>
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Matricúlate en iFP</h1>
+        <form action="" method="post" class="form">
+            <label for="form__name">Nombre: </label>
+            <input type="text" name="form__name" id="name" placeholder="Victor" required>
+            <label for="form__last-name">Apellidos: </label>
+            <input type="text" name="form__last-name" id="last-name" placeholder="Pérez Asuaje" required>
+            <label for="form__email">Email: </label>
+            <input type="text" name="form__email" id="email" placeholder="support@todayilearned.eu" required>
+            <label for="form__city">Población: </label>
+            <input type="text" name="form__city" id="city" placeholder="Sevilla" required>
+            <label for="form__state">Provincia: </label>
+            <input type="text" name="form__state" id="state" placeholder="Sevilla" required>
+
+            <div class="form__ifp-radio">
+                <p>Ciclo Formativo:</p>
+                <input type="radio" name="form__studies" id="form__smr">
+                <label for="form__smr">SMR</label>
+                <input type="radio" name="form__studies" id="form__daw">
+                <label for="form__daw">DAW</label>
+                <input type="radio" name="form__studies" id="form__dam" checked>
+                <label for="form__dam">DAM</label>
+                <input type="radio" name="form__studies" id="form__asir">
+                <label for="form__asir">ASIR</label>
+            </div>
+            
+            <div class="form__ifp-checkbox">
+                <p>¿Cómo conociste iFP?</p>
+                <input type="checkbox" name="instagram" id="form__instagram">
+                <label for="form__instagram">Instagram</label>
+                <input type="checkbox" name="google" id="form__google" checked>
+                <label for="form__google">Google</label>
+                <input type="checkbox" name="boca" id="form__boca">
+                <label for="form__boca">Boca a boca</label>
+                <input type="checkbox" name="boca" id="form__otros">
+                <label for="form__otros">Otros</label>
+            </div>
+            
+            <div class="form__comment">
+                <p>Desea indicar algún comentario:</p>
+                <textarea id="comment" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div class="form__study-hours">
+                <p>¿Cuántas horas de estudio dispones? (Señala la opción que más se acerque)</p>
+                <select id="study-hours" size="2">
+                    <option value="dos-horas">2 horas al día</option>
+                    <option value="cuatro-horas">4 horas al día</option>
+                    <option value="seis-horas">6 horas al día</option>
+                    <option value="ocho-horas">8 horas al día</option>
+                </select>
+            </div>
+
+            <div class="form__btn">
+                <button type="submit" onclick="alert('¡Gracias por matricularte!')">Matricularme</button>
+                <button type="reset">Borrar datos</button>
+            </div>            
+        </form>
+    </main>    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

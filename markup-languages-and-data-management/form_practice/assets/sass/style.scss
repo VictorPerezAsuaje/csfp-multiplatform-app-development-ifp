@@ -1,0 +1,141 @@
+/* RESETS */
+
+html, *, *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 1.5rem;}
+h2{font-size: 1.4rem;}
+h3{font-size: 1.3rem;}
+h4{font-size: 1.2rem;}
+h5{font-size: 1.1rem;}
+h6{font-size: 1rem;}
+
+/* BREAKPOINTS */
+
+
+
+/* CONTENT */
+
+body{
+    background-image: linear-gradient(120deg, rgb(99, 182, 157), rgb(27, 91, 110));
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    padding: 5vh 8vw;
+    background-color: #fdfdfd;
+    width: 90%;
+    margin: 7vh 0;
+
+    h1{
+        margin-bottom: 4vh;
+    }
+
+    .form{
+        display: grid;
+        width: 100%;
+        min-height: 70vh;
+        grid-template-columns: 1fr;
+        gap:1rem;
+
+        & input,
+        & textarea,
+        & select{
+            border: 2px solid rgb(99, 182, 157);
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+
+        & textarea{resize: none;}
+
+        &__ifp-radio,
+        &__ifp-checkbox{
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+
+            p{
+                grid-column:1/3;
+            }
+        }
+
+        &__comment{
+            & textarea{
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        &__study-hours{
+            & select{
+                margin-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        &__btn{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            
+
+            & button{
+                margin-top: 1rem;
+                padding: 2vh 1vw;
+                border: 2px solid rgb(99, 182, 157);
+                color: rgb(99, 182, 157);
+                background: none;
+                font-weight: bold;
+                border-radius: 24px;
+                text-transform: uppercase;
+                transition: 200ms ease-in-out;
+
+                &:hover{
+                    border-color: transparent;
+                    background-color: rgb(99, 182, 157);
+                    color: #fdfdfd;
+                    transition: 200ms ease-in-out;
+                }
+            }
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: 1fr 2fr;
+
+            &__comment,
+            &__study-hours,
+            &__btn{
+                grid-column: 1/3;
+            }
+
+            &__btn{
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        width: 80%;
+        padding: 4vh 4vw;
+    }
+}
