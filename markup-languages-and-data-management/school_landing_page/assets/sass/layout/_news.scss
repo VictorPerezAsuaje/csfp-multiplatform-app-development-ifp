@@ -1,0 +1,35 @@
+#news{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20vh 0;
+    display: grid;
+
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        color: $dark-color;
+    }
+
+    .news-list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 2vw;
+        justify-content: center;
+
+        @media(max-width: 768px){
+            & :last-child{
+                display: none;
+            }
+        }
+
+        @media(max-width: 425px){
+            grid-template-columns: auto;
+            margin-top: 4vh;
+
+            .card{
+                margin-bottom: 0vh;
+            }
+        }
+        
+    }
+}

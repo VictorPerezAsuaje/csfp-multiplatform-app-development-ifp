@@ -1,7 +1,12 @@
 header{
-    grid-column: 1/13;
-    padding: 4vh 2vw;
-    
+    padding: 3vh 2vw;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+    background-color: $color-white;
+
     nav{
         .menu{
             display: flex;
