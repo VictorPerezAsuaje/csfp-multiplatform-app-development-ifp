@@ -1,6 +1,7 @@
 // Resets
 
 @import 'base/colors';
+@import 'base/fonts';
 @import 'base/resets';
 @import 'base/breakpoints';
 
@@ -9,8 +10,15 @@
 
 // Components
 
+@import 'components/card';
 
 // Layout
 
+@import 'layout/header';
+@import 'layout/home';
+@import 'layout/news';
+@import 'layout/courses';
+@import 'layout/team';
+@import 'layout/contact';
 @import 'layout/canvas';
 
