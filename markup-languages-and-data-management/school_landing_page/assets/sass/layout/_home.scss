@@ -79,23 +79,13 @@
     }
 
     #home-btn{
-        border: 2px solid $primary-color;
-        padding: 3vh 2vw;
-        border-radius: 3rem;
         background: none;
-        color: $primary-color;
         font-weight: 600;
         font-size: 1.25rem;
         position: absolute;
         left: 75%;
         top: 85vh;
-        transition: .5s ease-in-out;
-
-        &:hover{
-            background-color: $primary-color;
-            color: $color-white;
-        }
-
+        
         @media (max-width: 768px) {
             display: none;
         }

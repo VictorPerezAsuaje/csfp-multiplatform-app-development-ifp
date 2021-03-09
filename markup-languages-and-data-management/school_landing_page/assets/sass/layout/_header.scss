@@ -16,13 +16,15 @@ header{
                 flex: 1;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 text-decoration: none;
                 color: $dark-color;
                 transition: 200ms ease-in-out;
 
                 &:first-child{
                     flex: 7;
-                    
+                    justify-content: flex-start;
+
                     li{
                         display: flex;
                         align-items: center;

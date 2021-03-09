@@ -1,17 +1,11 @@
 #news{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 20vh 0;
-    display: grid;
-
-    h2{
-        font-size: 2rem;
-        text-align: center;
-        color: $dark-color;
-    }
 
     .news-list{
         display: grid;
+        grid-column: 2/12;
         grid-template-columns: auto auto auto;
         gap: 2vw;
         justify-content: center;
